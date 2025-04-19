@@ -8,6 +8,6 @@ export default defineConfig({
     open: true,
   },
   resolve: {
-    extensions: [".js", ".ts", ".vue", ".css"], // Ensure .vue is included
+    extensions: [".js", ".ts", ".vue", ".css"],
   },
 });
