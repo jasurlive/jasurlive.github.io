@@ -1,45 +1,25 @@
-<!-- src/App.vue -->
 <template>
   <div id="app">
     <header>
       <h1>Jasur's trash projects</h1>
     </header>
 
-    <nav>
-      <button @click="view = 'home'">Home</button>
-    </nav>
-
     <main>
-      <component :is="currentView" />
+      <Links />
     </main>
   </div>
 </template>
 
 <script>
-import Home from "../components/Home.vue";
-import About from "../components/About.vue";
+import Links from "../add/components/Links.vue";
+import "../add/css/App.css";
 
 export default {
   name: "App",
-  data() {
-    return {
-      view: "home",
-    };
-  },
-  computed: {
-    currentView() {
-      return this.view === "home" ? Home : About;
-    },
+  components: {
+    Links,
   },
 };
 </script>
 
-<style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-nav button {
-  margin: 0 10px;
-}
-</style>
+<style scoped></style>
