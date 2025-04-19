@@ -5,8 +5,6 @@
       :key="index"
       :href="project.url"
       class="web-project-link"
-      target="_blank"
-      rel="noopener"
     >
       <div class="link-icon">{{ project.icon }}</div>
       {{ project.description }}
