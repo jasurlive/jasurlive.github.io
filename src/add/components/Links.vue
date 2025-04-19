@@ -58,8 +58,8 @@ export default {
           description: "Latin-Cyrillic Converter",
         },
         {
-          name: "To-Do List",
-          url: "https://jasurlive.github.io/to-do-list",
+          name: "To-Do List (ChecklistGo)",
+          url: "https://checklistgo.vercel.app/",
           icon: "✅",
           description: "To-Do List",
         },
