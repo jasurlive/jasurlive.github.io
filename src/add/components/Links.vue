@@ -59,7 +59,7 @@ export default {
         },
         {
           name: "To-Do List (ChecklistGo)",
-          url: "https://checklistgo.vercel.app/",
+          url: "https://checklistgo.vercel.app",
           icon: "✅",
           description: "To-Do List",
         },
