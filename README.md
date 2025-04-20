@@ -1,1 +1,1 @@
-### All links to my trash projects
+# My Minimalist Website
