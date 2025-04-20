@@ -1,4 +1,7 @@
 <template>
+  <div class="profile-pic">
+    <img src="/atv3.jpg" alt="Profile Picture" />
+  </div>
   <div class="container-web-projects">
     <a
       v-for="(project, index) in webProjectsData"
@@ -55,8 +58,8 @@ export default {
           description: "Latin-Cyrillic Converter",
         },
         {
-          name: "To-Do List",
-          url: "https://jasurlive.github.io/to-do-list",
+          name: "To-Do List (ChecklistGo)",
+          url: "https://checklistgo.vercel.app",
           icon: "✅",
           description: "To-Do List",
         },
@@ -96,7 +99,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 .web-project-link {
   text-decoration: none;
@@ -135,12 +138,16 @@ export default {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.profile-pic img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px) {
   .container-web-projects {
     flex-direction: column;
     align-items: center;
-    margin-top: -5rem;
-    margin-bottom: 2rem;
   }
 
   .web-project-link {
@@ -148,6 +155,13 @@ export default {
     justify-content: center;
     font-size: 1rem;
     padding: 1rem;
+  }
+
+  .profile-pic img {
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 1rem auto;
   }
 }
 
@@ -160,6 +174,13 @@ export default {
     flex: 1 1 calc(50% - 1rem);
     font-size: 1.2rem;
     padding: 1.5rem 2rem;
+  }
+
+  .profile-pic img {
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 1rem auto;
   }
 }
 </style>
