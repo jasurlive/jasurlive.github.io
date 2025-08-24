@@ -33,14 +33,12 @@ export default {
 }
 
 .profile-pic img:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .aboutme {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: justify;
   margin-top: 20px;
   padding: 0 10%;
   line-height: 1.7;
