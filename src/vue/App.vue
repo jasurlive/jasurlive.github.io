@@ -28,4 +28,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+header h1 {
+  font-family: "Sega";
+  font-size: 2rem;
+  font-weight: 500;
+}
+</style>
